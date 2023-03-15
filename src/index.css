@@ -19,3 +19,18 @@ html{
 .link{
   @apply cursor-pointer text-transparent no-underline
 }
+
+/* Footer */
+.social-icon {
+  @apply hover:text-title-gray hover:text-3xl transition-all duration-200 cursor-pointer
+}
+
+/* Form inputs */
+
+.input-text{
+  @apply outline-none border-none p-1 w-full text-gray-mid text-center text-sm
+}
+
+.details{
+  @apply outline-none border-none p-1 w-full rounded-t-3xl text-center text-sm
+}

@@ -49,10 +49,10 @@ const Footer = () => {
             <div>
               {/* icon */}
               <div className="flex items-center space-x-4 text-2xl w-full h-[100px]">
-                <BsFacebook className="hover:text-title-gray hover:text-3xl transition-all duration-200 cursor-pointer" />
-                <BsInstagram className="hover:text-title-gray hover:text-3xl transition-all duration-200 cursor-pointer" />
-                <BsYoutube className="hover:text-title-gray hover:text-3xl transition-all duration-200 cursor-pointer" />
-                <BsTwitter className="hover:text-title-gray hover:text-3xl transition-all duration-200 cursor-pointer" />
+                <BsFacebook className="social-icon" />
+                <BsInstagram className="social-icon" />
+                <BsYoutube className="social-icon" />
+                <BsTwitter className="social-icon" />
               </div>
             </div>
           </div>
@@ -61,7 +61,7 @@ const Footer = () => {
             <form action="" className="flex flex-col space-y-4">
               {/* name */}
               <div className="flex  flex-col items-start space-y-2 text-white">
-                <label htmlFor="" className="w-[90px] pl-4">
+                <label htmlFor="" className="w-[90px] pl-2 text-sm">
                   Name
                 </label>
                 <input
@@ -69,36 +69,36 @@ const Footer = () => {
                   name="name"
                   id="name"
                   placeholder="Enter your name"
-                  className="outline-none border-none p-1 w-full rounded-full text-gray-mid text-center"
+                  className="input-text rounded-full"
                 />
               </div>
               {/* office */}
               <div className="flex  flex-col items-start space-y-2 text-white">
-                <label htmlFor="" className="w-[90px] pl-4">
+                <label htmlFor="" className="w-[90px] pl-2 text-sm">
                   Office
                 </label>
                 <input
                   type="text"
                   name="office"
                   placeholder="Enter your name"
-                  className="outline-none border-none p-1 w-full rounded-full text-gray-mid text-center"
+                  className="input-text rounded-full"
                 />
               </div>
               {/* subject */}
               <div className="flex  flex-col items-start space-y-2 text-white">
-                <label htmlFor="" className="w-[90px] pl-4">
+                <label htmlFor="" className="w-[90px] pl-2 text-sm">
                   Subject
                 </label>
                 <input
                   type="text"
                   name="office"
                   placeholder="Enter your name"
-                  className="outline-none border-none p-1 w-full rounded-full text-gray-mid text-center"
+                  className="input-text rounded-full"
                 />
               </div>
               {/* details */}
               <div className="flex  flex-col items-start space-y-2 text-white">
-                <label htmlFor="" className="w-[90px] pl-4">
+                <label htmlFor="" className="w-[90px] pl-2 text-sm">
                   details
                 </label>
                 <textarea
@@ -106,7 +106,7 @@ const Footer = () => {
                   id="subject"
                   rows={4}
                   placeholder="Enter the message subject"
-                  className="outline-none border-none p-1 w-full rounded-t-3xl text-gray-mid text-center"
+                  className="details"
                 />
               </div>
               {/* send button */}

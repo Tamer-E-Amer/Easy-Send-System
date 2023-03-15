@@ -11,7 +11,7 @@ import { FiSend } from "react-icons/fi";
 import { GoLocation, GoMail } from "react-icons/go";
 const Footer = () => {
   return (
-    <div className="bg-red-dark p-4">
+    <div className="bg-red-dark p-4" id="footer">
       <div className="container">
         {/* Section title */}
         <h1 className="text-lg text-white">Contact us</h1>

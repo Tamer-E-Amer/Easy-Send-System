@@ -1,5 +1,5 @@
 import React from "react";
-import { MenuIcons, Department } from "../../components";
+import { MenuIcons } from "../../components";
 // import { EasysnedMain } from "../../../imgs/index.js";
 // import { depData } from "./../../data/layoutText";
 import { gteDepartmentData } from "../../functions/homFunctions.jsx";

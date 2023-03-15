@@ -34,7 +34,7 @@ const Login = () => {
                 Password
               </label>
               <input
-                type="text"
+                type="password"
                 name="password"
                 id="password"
                 placeholder="Enter password"

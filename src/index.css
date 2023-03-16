@@ -41,3 +41,9 @@ html{
   background-image:url('/imgs/login-back.png') ;
 
 }
+
+/* Dashboard */
+/* Nav */
+.dashboard-nav-link{
+  @apply w-full h-8 flex items-center space-x-2 text-gray-light-200 hover:cursor-pointer hover:text-red-dark hover:border-r-4 border-red-dark
+}

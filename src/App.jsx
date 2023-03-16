@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 //  components
 import { Navbar, Footer } from "./components";
 // Pages
-import { Home, Login, Register } from "./pages";
+import { Home, Login, Dashboard, Register } from "./pages";
 const App = () => {
   const LayOut = () => {
     return (
@@ -31,6 +31,10 @@ const App = () => {
         {
           path: "/register",
           element: <Register />,
+        },
+        {
+          path: "/dashboard",
+          element: <Dashboard />,
         },
       ],
     },

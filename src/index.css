@@ -28,7 +28,7 @@ html{
 /* Form inputs */
 
 .input-text{
-  @apply outline-none border-none p-1 w-full text-gray-mid text-center text-sm  focus:ring-1 focus:ring-gray-mid focus:border-[2px] focus:border-gray-mid
+  @apply outline-none border-none p-1 w-full text-gray-mid text-center text-sm  focus:ring-1 focus:ring-gray-mid focus:border-[2px] focus:border-gray-mid placeholder:text-[12px]
 }
 
 .details{

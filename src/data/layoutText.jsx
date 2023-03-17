@@ -12,6 +12,11 @@ export const depData = [
     icon: <GiGears />,
     about:
       "Operation deparments id managed by Eng. Mostafa salem and respnsible for provide first level technical support for all remote offices and managements that are managed by Damietta branch. It solves the problems in Internal and external Network and programs.",
+    problemsCount: {
+      problemsAbout: "HW and Networking",
+      openProblems: 4,
+      closedProblems: 60,
+    },
   },
   {
     id: 2,
@@ -19,6 +24,11 @@ export const depData = [
     icon: <MdSyncProblem />,
     about:
       "Operation deparments id managed by Eng. Mostafa salem and respnsible for provide first level technical support for all remote offices and managements that are managed by Damietta branch. It solves the problems in Internal and external Network and programs.",
+    problemsCount: {
+      problemsAbout: "Tax files and Safe",
+      openProblems: 4,
+      closedProblems: 60,
+    },
   },
   {
     id: 3,
@@ -26,6 +36,11 @@ export const depData = [
     icon: <MdQrCodeScanner />,
     about:
       "Operation deparments id managed by Eng. Mostafa salem and respnsible for provide first level technical support for all remote offices and managements that are managed by Damietta branch. It solves the problems in Internal and external Network and programs.",
+    problemsCount: {
+      problemsAbout: "Distributed systems",
+      openProblems: 7,
+      closedProblems: 25,
+    },
   },
   {
     id: 4,
@@ -33,6 +48,11 @@ export const depData = [
     icon: <BiCodeAlt />,
     about:
       "Operation deparments id managed by Eng. Mostafa salem and respnsible for provide first level technical support for all remote offices and managements that are managed by Damietta branch. It solves the problems in Internal and external Network and programs.",
+    problemsCount: {
+      problemsAbout: "Systems and pplications",
+      openProblems: 4,
+      closedProblems: 60,
+    },
   },
   {
     id: 5,

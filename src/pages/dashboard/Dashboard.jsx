@@ -1,8 +1,9 @@
 import React from "react";
 // Components
-import { WelcomeBar, DashbardNav } from "../../components";
+import { WelcomeBar, DashbardNav, ProblemsTable } from "../../components";
 import { gteDepartmentData } from "./../../functions/homFunctions.jsx";
 const Dashboard = () => {
+  // getDepartmentData function will return her list of ProblemsCount component based on the passed parametter which is /"problemsCount"/
   const problemsCount = gteDepartmentData("problemsCount");
   return (
     <>
@@ -26,6 +27,10 @@ const Dashboard = () => {
               alt="diagram"
               className="w-full md:w-3/4"
             />
+          </div>
+          {/* Problems table */}
+          <div className="p-4 overflow-x-scroll md:overflow-hidden flex items-start  border-[1px] bg-white border-title-gray ">
+            <ProblemsTable />
           </div>
         </div>
       </div>

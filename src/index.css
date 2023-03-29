@@ -54,7 +54,7 @@ html{
   @apply p-4 text-sm text-gray-800 font-semibold text-left whitespace-nowrap tracking-wide
 }
 .table-td{
-  @apply px-4 py-3 text-sm  text-left whitespace-nowrap
+  @apply px-4 py-3 text-sm  text-left 
 }
 
 .table-row{

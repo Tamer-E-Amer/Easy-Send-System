@@ -39,7 +39,7 @@ const Navbar = () => {
         </div>
         {/* Login button */}
         <Link to="/login" className="hidden sm:block">
-          <div className="w-40">
+          <div className="w-40 md:text-right">
             <button className=" capitalize px-8 py-1 rounded-full bg-gray-mid border-[1px] border-gray-dark text-white hover:bg-white hover:text-gray-dark hover:border-[1px] hover:border-gray-dark transition-all duration-200">
               login
             </button>

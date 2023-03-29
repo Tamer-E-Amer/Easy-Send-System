@@ -10,11 +10,11 @@ const Dashboard = () => {
       {/* Welcome bar */}
       <WelcomeBar />
       {/* Dashboard body */}
-      <div className="container p-4  flex  items-start space-x-4 ">
+      <div className="container  p-4  flex  items-start space-x-4 ">
         {/* Left menu */}
         <DashbardNav />
         {/* Dashboard data */}
-        <div className="w-full bg-gray-light-100 p-4 rounded-r-3xl flex flex-col space-y-4 ">
+        <div className="w-full bg-gray-light-100 p-4 md:rounded-r-3xl flex flex-col space-y-4 overflow-hidden">
           {/* Departments Statistics */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {problemsCount}
@@ -29,7 +29,7 @@ const Dashboard = () => {
             />
           </div>
           {/* Problems table */}
-          <div className="p-4 overflow-x-scroll md:overflow-hidden flex items-start  border-[1px] bg-white border-title-gray ">
+          <div className="p-4 overflow-x-scroll  border-[1px] bg-white border-title-gray ">
             <ProblemsTable />
           </div>
         </div>

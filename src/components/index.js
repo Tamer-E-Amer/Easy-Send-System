@@ -7,3 +7,4 @@ export { default as WelcomeBar } from "./util/dashboard/welcomeBar/WelcomeBar";
 export { default as DashbardNav } from "./util/dashboard/dashboardNav/DashboardNav";
 export { default as ProblemsCount } from "./util/dashboard/problemsCount/ProblemsCount";
 export { default as ProblemsTable } from "./util/dashboard/problemsTable/ProblemsTable";
+export { default as PageImgHeader } from "./util/dashboard/pageImgHeader/PageImgHeader";

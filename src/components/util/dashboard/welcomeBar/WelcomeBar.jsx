@@ -2,7 +2,7 @@ import React from "react";
 import { FaBuilding, FaRegCalendarAlt } from "react-icons/fa";
 const WelcomeBar = () => {
   return (
-    <div className="h-14 bg-red-dark flex items-center sticky top-[136px]">
+    <div className="h-14 bg-red-dark flex items-center sticky top-[136px] z-10">
       <div className="container px-4 flex items-center justify-between text-sm text-white">
         {/* avatar */}
         <div className="flex items-center space-x-2">

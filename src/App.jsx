@@ -4,7 +4,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 //  components
 import { Navbar, Footer } from "./components";
 // Pages
-import { Home, Login, Dashboard, Register } from "./pages";
+import { Home, Login, Dashboard, Register, ProblemRegister } from "./pages";
 const App = () => {
   const LayOut = () => {
     return (
@@ -35,6 +35,10 @@ const App = () => {
         {
           path: "/dashboard",
           element: <Dashboard />,
+        },
+        {
+          path: "/problemRegister",
+          element: <ProblemRegister />,
         },
       ],
     },

@@ -11,7 +11,7 @@ import { FiSend } from "react-icons/fi";
 import { GoLocation, GoMail } from "react-icons/go";
 const Footer = () => {
   return (
-    <div className="bg-red-dark p-4" id="footer">
+    <div className="bg-gray-mid p-4" id="footer">
       <div className="container">
         {/* Section title */}
         <h1 className="text-lg text-white">Contact us</h1>
@@ -106,13 +106,13 @@ const Footer = () => {
                   id="subject"
                   rows={4}
                   placeholder="Enter the message subject"
-                  className="details"
+                  className="details rounded-t-xl"
                 />
               </div>
               {/* send button */}
               <div className="flex">
                 {/* <label htmlFor=""></label> */}
-                <button className="w-full bg-title-gray h-8 hover:bg-gray-light-200 hover:text-white transition-all duration-200 text-red-dark font-semibold rounded-b-3xl flex items-center justify-center space-x-2">
+                <button className="w-full bg-title-gray h-8 hover:bg-gray-dark hover:text-white transition-all duration-200 text-red-dark font-semibold rounded-b-3xl flex items-center justify-center space-x-2">
                   <FiSend />
                   <span>Send</span>
                 </button>

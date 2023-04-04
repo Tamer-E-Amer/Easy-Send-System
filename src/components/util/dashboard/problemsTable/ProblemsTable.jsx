@@ -1,12 +1,9 @@
 import React from "react";
 import { useTable } from "react-table";
 import ApplicationsProblems from "./../../../../data/ApplicationsProblems.json";
+// functions
+import { getSummary } from "../../../../functions/dashboardFunctions";
 const ProblemsTable = () => {
-  // get summary of the problem subject
-  const getSummary = (problem) => {
-    if (problem) return `${problem.substr(0, 30)} ...`;
-  };
-
   const data = React.useMemo(() => ApplicationsProblems, []);
   const columns = React.useMemo(
     () => [
@@ -29,7 +26,7 @@ const ProblemsTable = () => {
         Header: "Problem",
         accessor: "problem",
         minWidth: 280,
-        Cell: ({ value }) => getSummary(value),
+        Cell: ({ value }) => getSummary(value, 60),
       },
 
       {

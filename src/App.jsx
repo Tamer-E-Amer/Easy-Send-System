@@ -11,6 +11,7 @@ import {
   Register,
   ProblemRegister,
   ProblemDetails,
+  ChangePassword,
 } from "./pages";
 const App = () => {
   const LayOut = () => {
@@ -50,6 +51,10 @@ const App = () => {
         {
           path: "/dashboard/problemDetails/:id",
           element: <ProblemDetails />,
+        },
+        {
+          path: "/dashboard/changePassword",
+          element: <ChangePassword />,
         },
       ],
     },

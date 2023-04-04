@@ -17,7 +17,7 @@ const Navbar = () => {
         </Link>
         <Link to="/" className="link block md:hidden">
           <div className="w-40">
-            <img src="imgs/logo-small.png" alt="logo-small" />
+            <img src="/imgs/logo-small.png" alt="logo-small" />
           </div>
         </Link>
 

@@ -14,7 +14,7 @@ const ChangePassword = () => {
         <div className="w-full bg-gray-light-100 p-0  md:rounded-r-3xl  overflow-hidden">
           {/* Heder Image */}
           <PageImgHeader img="/imgs/add-data.png" title="Change password" />
-          <div className="p-4 md:px-8 lg:px-12 flex items-center justify-center w-full">
+          <div className="p-4 ">
             {/* form white container */}
             <div className="bg-white flex items-center justify-center w-full px-4 py-8  md:rounded-br-3xl">
               <form

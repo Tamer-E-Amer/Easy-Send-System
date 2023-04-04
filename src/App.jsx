@@ -4,7 +4,14 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 //  components
 import { Navbar, Footer } from "./components";
 // Pages
-import { Home, Login, Dashboard, Register, ProblemRegister } from "./pages";
+import {
+  Home,
+  Login,
+  Dashboard,
+  Register,
+  ProblemRegister,
+  ProblemDetails,
+} from "./pages";
 const App = () => {
   const LayOut = () => {
     return (
@@ -37,8 +44,12 @@ const App = () => {
           element: <Dashboard />,
         },
         {
-          path: "/problemRegister",
+          path: "/dashboard/problemRegister",
           element: <ProblemRegister />,
+        },
+        {
+          path: "/dashboard/problemDetails/:id",
+          element: <ProblemDetails />,
         },
       ],
     },

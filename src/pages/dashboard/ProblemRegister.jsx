@@ -15,7 +15,6 @@ const ProblemRegister = () => {
           {/* Heder Image */}
           <PageImgHeader img="/imgs/add-data.png" title="Open ticken" />
           {/* problem registeration form*/}
-          {/* problem id */}
           <div className="p-4 md:px-8 lg:px-12">
             <form action="" className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               {/* problem id */}

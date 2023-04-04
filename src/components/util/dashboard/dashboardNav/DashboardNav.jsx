@@ -6,7 +6,7 @@ import { CgProfile } from "react-icons/cg";
 const DashboardNav = () => {
   return (
     <div className="hidden py-4 pl-4 md:flex flex-col items-start w-[220px] bg-gray-light-100 space-y-2 rounded-l-2xl sticky top-[210px] z-0">
-      <Link to="/problemRegister" className="w-full">
+      <Link to="/dashboard/problemRegister" className="w-full">
         <div className="dashboard-nav-link">
           {/* icon */}
           <GoIssueOpened className="text-lg" />

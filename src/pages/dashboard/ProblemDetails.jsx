@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  MdOutlineAssignment,
-  MdOutlineAssignmentInd,
-  MdReply,
-} from "react-icons/md";
+import { MdOutlineAssignmentInd, MdReply } from "react-icons/md";
 import { DashbardNav, PageImgHeader, WelcomeBar } from "../../components";
 
 const ProblemDetails = () => {
@@ -178,7 +174,7 @@ const ProblemDetails = () => {
                     <MdReply className="text-xl" />
                     <span>Reply</span>
                   </button>
-                  <button className="w-full md:w-1/2 h-8 border-[1px] border-gray-mid border-full hover:border-red-dark  hover:bg-white text-sm transition-all duration-200 text-gray-light-200 font-semibold rounded-full flex items-center justify-center space-x-2 lg:col-span-2">
+                  <button className="w-full px-2 md:w-1/2 h-8 border-[1px] border-gray-mid border-full hover:border-red-dark  hover:bg-title-gray text-sm transition-all duration-200 text-gray-light-200 font-semibold rounded-full flex items-center justify-center space-x-2 lg:col-span-2">
                     <MdOutlineAssignmentInd className="text-xl" />
                     <span>Assign/Reassign</span>
                   </button>
@@ -192,6 +188,7 @@ const ProblemDetails = () => {
                font-semibold text-center
                "
               >
+                {/* TODO: table of problem response will be here */}
                 Responses table will be here
               </p>
             </div>

@@ -1,0 +1,34 @@
+[
+    {
+        "id":1,
+        "sender":"Tamer Amer",
+        "message":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sapiente sequi delectus nemo harum quae hic. Cumque fugit dolore doloribus, aspernatur ipsam quas repellat excepturi eius incidunt. Dignissimos, ipsa inventore!",
+        "date":"01-04-2023",
+        "attach":["1.png","2.png","3.png"],
+        "isRead":true
+    },
+    {
+        "id":2,
+        "sender":"John Doe2",
+        "message":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sapiente sequi delectus nemo harum quae hic. Cumque fugit dolore doloribus, aspernatur ipsam quas repellat excepturi eius incidunt. Dignissimos, ipsa inventore!",
+        "date":"01-04-2023",
+        "attach":["1.png","3.png"],
+        "isRead":true
+    },
+    {
+        "id":3,
+        "sender":"Amr tallat",
+        "message":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sapiente sequi delectus nemo harum quae hic. Cumque fugit dolore doloribus, aspernatur ipsam quas repellat excepturi eius incidunt. Dignissimos, ipsa inventore!",
+        "date":"01-04-2023",
+        "attach":["1.png"],
+        "isRead":true
+    },
+    {
+        "id":4,
+        "sender":"Mohsen mwafy",
+        "message":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sapiente sequi delectus nemo harum quae hic. Cumque fugit dolore doloribus, aspernatur ipsam quas repellat excepturi eius incidunt. Dignissimos, ipsa inventore!",
+        "date":"04-04-2023",
+        "attach":["2.png","3.png"],
+        "isRead":true
+    }
+]

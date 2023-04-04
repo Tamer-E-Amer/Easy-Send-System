@@ -29,12 +29,14 @@ const DashboardNav = () => {
         {/* link title */}
         <span className="text-sm">Search</span>
       </div>
-      <div className="dashboard-nav-link">
-        {/* icon */}
-        <GoMail className="text-lg" />
-        {/* link title */}
-        <span className="text-sm">Messages</span>
-      </div>
+      <Link to="/dashboard/messages" className="w-full">
+        <div className="dashboard-nav-link">
+          {/* icon */}
+          <GoMail className="text-lg" />
+          {/* link title */}
+          <span className="text-sm">Messages</span>
+        </div>
+      </Link>
       <Link to="/dashboard/changePassword">
         <div className="dashboard-nav-link">
           {/* icon */}

@@ -1,1 +1,2 @@
 - User in remote offices can not update the problem only if it is pending otherwise no
+- make imahe in page imgheader dynamic with a prop of img path

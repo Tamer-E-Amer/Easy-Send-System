@@ -50,7 +50,7 @@ const ChangePassword = () => {
                 {/* password confirm*/}
                 <div className="flex  flex-col items-start space-y-2 text-gray-light-200">
                   <label htmlFor="" className="w-[140px] pl-2 text-sm">
-                    Passwprd confirm
+                    Password confirm
                   </label>
                   <input
                     type="password"

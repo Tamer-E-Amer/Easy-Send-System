@@ -12,6 +12,7 @@ import {
   ProblemRegister,
   ProblemDetails,
   ChangePassword,
+  Messages,
 } from "./pages";
 const App = () => {
   const LayOut = () => {
@@ -55,6 +56,10 @@ const App = () => {
         {
           path: "/dashboard/changePassword",
           element: <ChangePassword />,
+        },
+        {
+          path: "/dashboard/messages",
+          element: <Messages />,
         },
       ],
     },

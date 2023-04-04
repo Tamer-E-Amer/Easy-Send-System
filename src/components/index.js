@@ -8,3 +8,4 @@ export { default as DashbardNav } from "./util/dashboard/dashboardNav/DashboardN
 export { default as ProblemsCount } from "./util/dashboard/problemsCount/ProblemsCount";
 export { default as ProblemsTable } from "./util/dashboard/problemsTable/ProblemsTable";
 export { default as PageImgHeader } from "./util/dashboard/pageImgHeader/PageImgHeader";
+export { default as MessageTable } from "./util/dashboard/messageTable/MessageTable";

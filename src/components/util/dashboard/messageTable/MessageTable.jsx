@@ -1,66 +1,46 @@
 import React from "react";
+// react table
 import { useTable } from "react-table";
-import ApplicationsProblems from "./../../../../data/ApplicationsProblems.json";
-const ProblemsTable = () => {
-  // get summary of the problem subject
-  const getSummary = (problem) => {
-    if (problem) return `${problem.substr(0, 30)} ...`;
-  };
-
-  const data = React.useMemo(() => ApplicationsProblems, []);
+// functions
+import { getSummary } from "../../../../functions/dashboardFunctions";
+// data
+import messages from "./../../../../data/messages.json";
+const MessageTable = () => {
+  const data = React.useMemo(() => messages, []);
   const columns = React.useMemo(
     () => [
       {
-        Header: "ID",
-        accessor: "id",
-        minWidth: 30,
+        Header: "Sender",
+        accessor: "sender",
+        minWidth: 150,
       },
       {
-        Header: "Application",
-        accessor: "applicationName",
-        minWidth: 120,
+        Header: "Message",
+        accessor: "message",
+        minWidth: 300,
+        Cell: ({ value }) => getSummary(value, 30),
       },
-      // {
-      //   Header: "Version",
-      //   accessor: "version",
-      //   minWidth: 30,
-      // },
-      {
-        Header: "Problem",
-        accessor: "problem",
-        minWidth: 280,
-        Cell: ({ value }) => getSummary(value),
-      },
-
       {
         Header: "Date",
-        accessor: "issuedAt",
+        accessor: "date",
         minWidth: 120,
       },
-      {
-        Header: "Office",
-        accessor: "office",
-        minWidth: 150,
-      },
-      {
-        Header: "User",
-        accessor: "user",
-        minWidth: 150,
-      },
-      {
-        Header: "Status",
-        accessor: "status",
-        minWidth: 90,
-      },
+      //   TODO: make a function to render attaches correctly
+      //   {
+      //     Header: "Attach",
+      //     accessor: "attach",
+      //   },
     ],
     []
   );
+
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
     useTable({ columns, data });
+
   return (
     <>
-      <table {...getTableProps()}>
-        {/* table header */}
+      <table {...getTableProps()} className="w-full">
+        {/* header */}
         <thead>
           {headerGroups.map((headerGroup, index) => (
             <tr
@@ -102,4 +82,4 @@ const ProblemsTable = () => {
   );
 };
 
-export default ProblemsTable;
+export default MessageTable;

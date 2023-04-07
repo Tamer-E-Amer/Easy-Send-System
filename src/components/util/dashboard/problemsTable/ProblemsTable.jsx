@@ -56,7 +56,7 @@ const ProblemsTable = () => {
     useTable({ columns, data });
   return (
     <>
-      <table {...getTableProps()}>
+      <table {...getTableProps()} className="w-full">
         {/* table header */}
         <thead>
           {headerGroups.map((headerGroup, index) => (

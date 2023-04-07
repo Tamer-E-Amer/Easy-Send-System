@@ -1,8 +1,28 @@
 import React from "react";
+import { FiSend } from "react-icons/fi";
 import { MdOutlineAssignmentInd, MdReply } from "react-icons/md";
-import { DashbardNav, PageImgHeader, WelcomeBar } from "../../components";
+import {
+  DashbardNav,
+  PageImgHeader,
+  WelcomeBar,
+  ProblemResponse,
+  Modal,
+} from "../../components";
 
 const ProblemDetails = () => {
+  const [showModal, setShowModal] = React.useState(false);
+  // open modal
+  const openModal = (e) => {
+    e.preventDefault();
+    console.log("Open modal function");
+    setShowModal(true);
+  };
+  // close modal
+  const closeModal = (e) => {
+    console.log("closing modal");
+    setShowModal(false);
+  };
+
   return (
     <>
       {/* Welcome bar */}
@@ -17,8 +37,8 @@ const ProblemDetails = () => {
           <PageImgHeader img="/imgs/add-data.png" title="Problem details" />
           {/* problem details data*/}
           <div className="p-4">
-            <div className="p-4 md:px-8 lg:px-12 bg-white">
-              <form action="" className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div className="p-4 md:px-8 lg:px-12 bg-white relative">
+              <form className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                 {/* problem id */}
                 <div className="flex  flex-col items-start space-y-2 text-gray-light-200">
                   <label htmlFor="" className="w-[90px] pl-2 text-sm">
@@ -170,7 +190,10 @@ const ProblemDetails = () => {
                 </div>
                 {/* Action buttons */}
                 <div className="flex flex-col space-y-2 justify-center sm:flex-row sm:items-center sm:justify-start sm:space-x-4 sm:space-y-0">
-                  <button className="w-full md:w-1/2 bg-gray-mid h-8 hover:bg-red-dark hover:text-white  text-sm transition-all duration-200 text-white font-semibold rounded-full flex items-center justify-center space-x-2 lg:col-span-2">
+                  <button
+                    onClick={openModal}
+                    className="w-full md:w-1/2 bg-gray-mid h-8 hover:bg-red-dark hover:text-white  text-sm transition-all duration-200 text-white font-semibold rounded-full flex items-center justify-center space-x-2 lg:col-span-2"
+                  >
                     <MdReply className="text-xl" />
                     <span>Reply</span>
                   </button>
@@ -180,17 +203,53 @@ const ProblemDetails = () => {
                   </button>
                 </div>
               </form>
+              {/* Problem response modal */}
+              {showModal && (
+                <Modal closeModal={closeModal} title="Add problem response">
+                  {/* modal container */}
+                  <div className="p-4 bg-white">
+                    <form action="" className="grid grid-cols-1 gap-4">
+                      {/* Response */}
+                      {/* details */}
+                      <div className="flex  flex-col items-start space-y-2 text-gray-light-200">
+                        <label htmlFor="" className="w-[130px]  text-sm">
+                          Response
+                        </label>
+                        <textarea
+                          type="text"
+                          name="response"
+                          id="response"
+                          rows={5}
+                          placeholder="Enter your response"
+                          className="details rounded-b-xl bg-gray-light-100 "
+                        />
+                      </div>
+                      {/* Attach */}
+                      <div className="flex  flex-col items-start space-y-2 text-gray-light-200">
+                        <label htmlFor="" className="w-[120px] pl-2 text-sm">
+                          Upload files
+                        </label>
+                        <input
+                          type="file"
+                          name="attachs"
+                          className="input-text rounded-full bg-gray-light-100"
+                        />
+                      </div>
+                      <button className="w-full md:w-1/2 lg:w-1/3 bg-gray-mid h-8 hover:bg-red-dark hover:text-white  text-sm transition-all duration-200 text-white font-semibold rounded-full flex items-center justify-center space-x-2">
+                        <FiSend className="text-lg" />
+                        <span>Add response</span>
+                      </button>
+                    </form>
+                  </div>
+                </Modal>
+              )}
             </div>
             {/* Response to problems */}
-            <div className="p-4 overflow-x-auto  border-[1px] bg-white border-title-gray mt-4 md:rounded-br-xl">
-              <p
-                className="text-sm text-gray-mid
-               font-semibold text-center
-               "
-              >
-                {/* TODO: table of problem response will be here */}
-                Responses table will be here
-              </p>
+            <div className="p-4 md:px-8 lg:px-12  border-[1px] bg-white border-title-gray mt-4 md:rounded-br-xl">
+              <ProblemResponse />
+              <ProblemResponse />
+              <ProblemResponse />
+              {/* TODO: remove the hr tag from the last response */}
             </div>
           </div>
         </div>

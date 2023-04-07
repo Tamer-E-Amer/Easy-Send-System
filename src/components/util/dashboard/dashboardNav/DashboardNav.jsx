@@ -37,7 +37,7 @@ const DashboardNav = () => {
           <span className="text-sm">Messages</span>
         </div>
       </Link>
-      <Link to="/dashboard/changePassword">
+      <Link to="/dashboard/changePassword" className="w-full">
         <div className="dashboard-nav-link">
           {/* icon */}
           <CgProfile className="text-lg" />

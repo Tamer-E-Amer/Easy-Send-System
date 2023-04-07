@@ -97,7 +97,7 @@ const Footer = () => {
                 />
               </div>
               {/* details */}
-              <div className="flex  flex-col items-start space-y-2 text-white">
+              <div className="flex  flex-col items-start space-y-2 text-gray-mid">
                 <label htmlFor="" className="w-[90px] pl-2 text-sm">
                   details
                 </label>

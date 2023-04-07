@@ -9,3 +9,5 @@ export { default as ProblemsCount } from "./util/dashboard/problemsCount/Problem
 export { default as ProblemsTable } from "./util/dashboard/problemsTable/ProblemsTable";
 export { default as PageImgHeader } from "./util/dashboard/pageImgHeader/PageImgHeader";
 export { default as MessageTable } from "./util/dashboard/messageTable/MessageTable";
+export { default as ProblemResponse } from "./util/dashboard/problemResponse/ProblemResponse";
+export { default as Modal } from "./util/dashboard/modal/Modal";

@@ -1,10 +1,20 @@
 import React from "react";
 import { useTable } from "react-table";
+import { useNavigate } from "react-router-dom";
 import ApplicationsProblems from "./../../../../data/ApplicationsProblems.json";
 // functions
 import { getSummary } from "../../../../functions/dashboardFunctions";
 const ProblemsTable = () => {
   const data = React.useMemo(() => ApplicationsProblems, []);
+
+  const navigate = useNavigate();
+  /**
+   * @description this function accept a row and navigate to the detailed page of the problem in this row
+   * @param {*} row
+   */
+  const handleRowClick = (row) => {
+    navigate(`/dashboard/problemDetails/${row.values.id}`);
+  };
   const columns = React.useMemo(
     () => [
       {
@@ -84,7 +94,12 @@ const ProblemsTable = () => {
           {rows.map((row, index) => {
             prepareRow(row);
             return (
-              <tr key={index} {...row.getRowProps()} className="table-row">
+              <tr
+                key={index}
+                {...row.getRowProps()}
+                className="table-row"
+                onClick={() => handleRowClick(row)}
+              >
                 {row.cells.map((cell, index) => (
                   <td key={index} {...cell.getCellProps()} className="table-td">
                     {cell.render("Cell")}

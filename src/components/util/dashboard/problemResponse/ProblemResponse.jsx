@@ -28,15 +28,22 @@ const ProblemResponse = () => {
           recusandae?
         </p>
         {/* attachments*/}
-        <div className="flex items-start justify-center space-x-2">
-          <div className="w-8 h-8 bg-red-dark flex items-center justify-center rounded-full text-white cursor-pointer">
-            1
-          </div>
-          <div className="w-8 h-8 bg-red-dark flex items-center rounded-full justify-center text-white cursor-pointer ">
-            2
-          </div>
-          <div className="w-8 h-8 bg-red-dark flex items-center justify-center rounded-full text-white cursor-pointer">
-            3
+        {/* TODO: show only if attachments exist */}
+        <div className="flex flex-col items-start md:items-center md:justify-center space-y-4">
+          <span className="text-xs  text-gray-light-200 underline">
+            Attachments
+          </span>
+          {/* attachments links */}
+          <div className="flex items-start justify-center space-x-2">
+            <div className="w-8 h-8 bg-red-dark flex items-center justify-center rounded-full text-white cursor-pointer">
+              1
+            </div>
+            <div className="w-8 h-8 bg-red-dark flex items-center rounded-full justify-center text-white cursor-pointer ">
+              2
+            </div>
+            <div className="w-8 h-8 bg-red-dark flex items-center justify-center rounded-full text-white cursor-pointer">
+              3
+            </div>
           </div>
         </div>
       </div>

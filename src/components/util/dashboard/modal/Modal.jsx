@@ -15,7 +15,7 @@ const Modal = ({ children, title, closeModal }) => {
         onClick={closeModelWithBgClick}
       >
         {/* modal header */}
-        <div className="p-4 mb-4 text-left md:text-center bg-gray-mid relative">
+        <div className="p-4 mb-4 text-left md:text-center bg-gray-mid flex items-center relative">
           <div
             onClick={closeModal}
             className="h-8 w-8 flex items-center justify-center rounded-full border-[1px] bg-white text-red-dark text-lg absolute right-5 cursor-pointer hover:bg-red-dark hover:text-white"
